@@ -1,0 +1,19 @@
+# Dependencies
+node_modules/
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Vim temporary and backup files
+*.swp
+*.swo
+*~
+
+# Operating system files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+.idea/
