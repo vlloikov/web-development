@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="СКФУ — «Звук победы»"
+    >
+    <title>СКФУ — Звук победы</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <main class="album">
+      <header class="album__header">
+        <p class="album__label">СКФУ / <span lang="en">Sound archive</span></p>
+        <span class="album__number" aria-label="Запись номер один">№ 001</span>
+      </header>
+
+      <!-- Контейнер задаёт систему координат для подписи поверх картинки. -->
+      <figure class="cover">
+        <img
+          class="cover__image"
+          src="assets/cover.png"
+          alt="Стилизованный голубой знак СКФУ на тёмном фоне с мягким свечением"
+          width="1254"
+          height="1254"
+        >
+
+        <!-- Это HTML-текст: он расположен поверх изображения средствами CSS. -->
+        <figcaption class="cover__caption">
+          <p class="cover__eyebrow">СКФУ</p>
+          <h1 class="cover__title">Звук победы</h1>
+          <p class="cover__subtitle">Музыка студенческих побед.</p>
+        </figcaption>
+      </figure>
+
+      <footer class="album__footer">
+        <p>Студенческий альбом</p>
+        <p>Концепт обложки · 2026</p>
+      </footer>
+    </main>
+  </body>
+</html>
