@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Группа — личный сайт Владислава Лоикова</title>
+    <meta name="description" content="Направление подготовки, фотография и список студентов группы ПИЖ-б-о-26-1 СКФУ.">
+    <title>Моя группа — Владислав Лоиков</title>
 </head>
 <body>
-    <header>
-        <h1>Моя группа</h1>
-        <p>
-            Я учусь в группе <strong>ПИЖ-б-о-26-1</strong>
-            Северо-Кавказского федерального университета.
-        </p>
-        <nav aria-label="Разделы личного сайта">
-            <h2>Разделы сайта</h2>
-            <ul>
-                <li><a href="index.html">Главная.</a></li>
-                <li><a href="about.html">Обо мне.</a></li>
-                <li><a href="friends.html">Друзья.</a></li>
-                <li><a href="hobbies.html">Увлечения.</a></li>
-                <li><a href="group.html">Группа.</a></li>
-                <li><a href="sps.html">СПС — информационная безопасность сложных систем.</a></li>
-            </ul>
-        </nav>
-    </header>
+<a href="#main-content">Перейти к основному содержимому</a>
 
-    <main>
-        <section>
-            <h2>Направление подготовки</h2>
+<!-- Шапка объединяет название страницы и общую навигацию по сайту. -->
+<header id="top">
+    <p><a href="index.html">Личный сайт Владислава Лоикова</a></p>
+    <h1>Моя группа</h1>
+    <p>Я учусь в группе <strong>ПИЖ-б-о-26-1</strong> Северо-Кавказского федерального университета.</p>
+
+    <!-- Относительные ссылки одинаковы на всех шести страницах. -->
+    <nav aria-label="Основная навигация">
+        <h2>Разделы сайта</h2>
+        <ul>
+            <li><a href="index.html">Главная</a></li>
+            <li><a href="about.html">Обо мне</a></li>
+            <li><a href="friends.html">Друзья</a></li>
+            <li><a href="hobbies.html">Увлечения</a></li>
+            <li><a href="group.html" aria-current="page">Группа</a></li>
+            <li><a href="sps.html">СПС — информационная безопасность</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- На странице один main: здесь находится её уникальное содержимое. -->
+<main id="main-content">
+    <!-- Самостоятельный материал об одной учебной группе. -->
+    <article aria-labelledby="group-heading">
+        <h2 id="group-heading">Учебная группа ПИЖ-б-о-26-1</h2>
+        <figure>
+            <img
+                    src="images/group.jpg"
+                    alt="Студенты группы ПИЖ-б-о-26-1 за партами в учебной аудитории"
+                    width="360"
+                    height="480"
+            >
+            <figcaption>Мои одногруппники в аудитории СКФУ.</figcaption>
+        </figure>
+
+        <section id="education" aria-labelledby="education-heading">
+            <h3 id="education-heading">Направление подготовки</h3>
             <dl>
+                <dt>Университет</dt>
+                <dd>Северо-Кавказский федеральный университет.</dd>
                 <dt>Направление</dt>
                 <dd>Программная инженерия.</dd>
                 <dt>Профиль</dt>
@@ -36,21 +56,15 @@
                 <dt>Курс</dt>
                 <dd>Первый.</dd>
             </dl>
+            <p>
+                Пример профильной темы представлен на странице
+                <a href="sps.html">об информационной безопасности сложных систем</a>.
+            </p>
         </section>
 
-        <hr>
-
-        <figure>
-            <img
-                src = "images/group.jpg"
-                alt="Фото группы ПИЖ-б-о-26-1"
-                width="500"
-            >
-            <figcaption>Группа ПИЖ-б-о-26-1 Северо-Кавказского федерального университета.</figcaption>
-        </figure>
-
-        <section>
-            <h2>Студенты группы</h2>
+        <section id="students" aria-labelledby="students-heading">
+            <h3 id="students-heading">Студенты группы</h3>
+            <!-- Состав группы сохранён из исходной версии сайта. -->
             <ul>
                 <li>Антонова Анна Сергеевна</li>
                 <li>Антонюк Леонид Владиславович</li>
@@ -84,13 +98,22 @@
                 <li>Цоколов Станислав Сергеевич</li>
             </ul>
         </section>
+    </article>
 
-        <hr>
+    <aside aria-labelledby="group-note-heading">
+        <h2 id="group-note-heading">Друзья и проектная команда</h2>
+        <p>
+            На сайте также есть <a href="friends.html">страница моих друзей</a>
+            и описание <a href="about.html#team">команды ByteForce</a>,
+            в которой я участвую в учебном проекте.
+        </p>
+    </aside>
+</main>
 
-    </main>
-
-    <footer>
-        <p><small>Владислав Лоиков<br>СКФУ, 2026</small></p>
-    </footer>
+<!-- Общий подвал и якорь для возврата к началу длинной страницы. -->
+<footer>
+    <p><small>&copy; 2026 Владислав Лоиков. СКФУ.</small></p>
+    <p><a href="#top">В начало страницы</a></p>
+</footer>
 </body>
 </html>
