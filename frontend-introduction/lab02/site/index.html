@@ -1,94 +1,99 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Учёба, интересы, друзья и учебные проекты студента СКФУ Владислава Лоикова.">
-    <title>Личный сайт Владислава Лоикова — главная</title>
-</head>
-<body>
-<a href="#main-content">Перейти к основному содержимому</a>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Учёба, интересы, друзья и учебные проекты студента СКФУ Владислава Лоикова."
+        />
+        <title>Личный сайт Владислава Лоикова — главная</title>
+    </head>
+    <body>
+        <a href="#main-content">Перейти к основному содержимому</a>
 
-<!-- Шапка объединяет название страницы и общую навигацию по сайту. -->
-<header id="top">
-    <img
-            src="images/ncfu-logo.png"
-            alt="Стилизованная голубая эмблема СКФУ на тёмном фоне"
-            width="160"
-            height="160"
-    >
-    <h1>Личный сайт Владислава Лоикова</h1>
-    <p>
-        Добро пожаловать! Я учусь в СКФУ на направлении
-        <strong>«Программная инженерия»</strong> и интересуюсь разработкой
-        программ, Linux и веб-технологиями.
-    </p>
-
-    <!-- Относительные ссылки одинаковы на всех шести страницах. -->
-    <nav aria-label="Основная навигация">
-        <h2>Разделы сайта</h2>
-        <ul>
-            <li><a href="index.html" aria-current="page">Главная</a></li>
-            <li><a href="about.html">Обо мне</a></li>
-            <li><a href="friends.html">Друзья</a></li>
-            <li><a href="hobbies.html">Увлечения</a></li>
-            <li><a href="group.html">Группа</a></li>
-            <li><a href="sps.html">СПС — информационная безопасность</a></li>
-        </ul>
-    </nav>
-</header>
-
-<!-- На странице один main: здесь находится её уникальное содержимое. -->
-<main id="main-content">
-    <section aria-labelledby="study-heading">
-        <h2 id="study-heading">Учёба и интересы</h2>
-
-        <article>
-            <h3>Моё направление</h3>
+        <!-- Шапка объединяет название страницы и общую навигацию по сайту. -->
+        <header id="top">
+            <img
+                src="images/ncfu-logo.png"
+                alt="Стилизованная голубая эмблема СКФУ на тёмном фоне"
+                width="160"
+                height="160"
+            />
+            <h1>Личный сайт Владислава Лоикова</h1>
             <p>
-                Я студент первого курса группы
-                <a href="group.html">ПИЖ-б-о-26-1</a>.
-                Мой профиль — <strong>«Инженерия сложных программных систем»</strong>.
+                Добро пожаловать! Я учусь в СКФУ на направлении
+                <strong>«Программная инженерия»</strong> и интересуюсь разработкой программ, Linux и
+                веб-технологиями.
             </p>
-            <p>
-                Мне интересно понимать, как устроены программы: от алгоритмов
-                и структур данных до взаимодействия сервисов.
-                Подробнее об этом можно прочитать в
-                <a href="about.html">моей биографии</a> и посмотреть
-                <a href="about.html#skills">список моих навыков</a>.
-            </p>
-        </article>
-    </section>
 
-    <section aria-labelledby="site-heading">
-        <h2 id="site-heading">Что есть на сайте</h2>
-        <!-- Ссылки внутри содержания дополняют общее меню в header. -->
-        <ul>
-            <li><a href="friends.html">Знакомство с моими друзьями</a>.</li>
-            <li><a href="hobbies.html">Программирование, музыка и катание на коньках</a>.</li>
-            <li><a href="group.html#students">Студенты моей учебной группы</a>.</li>
-            <li>
-                <a href="sps.html#architecture">Безопасность и архитектура сложных систем</a>:
-                выбранная мной профильная тема.
-            </li>
-        </ul>
-    </section>
+            <!-- Относительные ссылки одинаковы на всех шести страницах. -->
+            <nav aria-label="Основная навигация">
+                <h2>Разделы сайта</h2>
+                <ul>
+                    <li><a href="index.html" aria-current="page">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="friends.html">Друзья</a></li>
+                    <li><a href="hobbies.html">Увлечения</a></li>
+                    <li><a href="group.html">Группа</a></li>
+                    <li><a href="sps.html">СПС — информационная безопасность</a></li>
+                </ul>
+            </nav>
+        </header>
 
-    <!-- Контакт дополняет рассказ и не является его основным разделом. -->
-    <aside aria-labelledby="contact-heading">
-        <h2 id="contact-heading">Связь со мной</h2>
-        <p>
-            Написать мне можно в
-            <a href="https://t.me/vlloikov" target="_blank" rel="noopener noreferrer">Telegram</a>.
-            Ссылка откроется в новой вкладке.
-        </p>
-    </aside>
-</main>
+        <!-- На странице один main: здесь находится её уникальное содержимое. -->
+        <main id="main-content">
+            <section aria-labelledby="study-heading">
+                <h2 id="study-heading">Учёба и интересы</h2>
 
-<!-- Общий подвал и якорь для возврата к началу длинной страницы. -->
-<footer>
-    <p><small>&copy; 2026 Владислав Лоиков. СКФУ.</small></p>
-    <p><a href="#top">В начало страницы</a></p>
-</footer>
-</body>
+                <article>
+                    <h3>Моё направление</h3>
+                    <p>
+                        Я студент первого курса группы
+                        <a href="group.html">ПИЖ-б-о-26-1</a>. Мой профиль —
+                        <strong>«Инженерия сложных программных систем»</strong>.
+                    </p>
+                    <p>
+                        Мне интересно понимать, как устроены программы: от алгоритмов и структур
+                        данных до взаимодействия сервисов. Подробнее об этом можно прочитать в
+                        <a href="about.html">моей биографии</a> и посмотреть
+                        <a href="about.html#skills">список моих навыков</a>.
+                    </p>
+                </article>
+            </section>
+
+            <section aria-labelledby="site-heading">
+                <h2 id="site-heading">Что есть на сайте</h2>
+                <!-- Ссылки внутри содержания дополняют общее меню в header. -->
+                <ul>
+                    <li><a href="friends.html">Знакомство с моими друзьями</a>.</li>
+                    <li>
+                        <a href="hobbies.html">Программирование, музыка и катание на коньках</a>.
+                    </li>
+                    <li><a href="group.html#students">Студенты моей учебной группы</a>.</li>
+                    <li>
+                        <a href="sps.html#architecture">Безопасность и архитектура сложных систем</a
+                        >: выбранная мной профильная тема.
+                    </li>
+                </ul>
+            </section>
+
+            <!-- Контакт дополняет рассказ и не является его основным разделом. -->
+            <aside aria-labelledby="contact-heading">
+                <h2 id="contact-heading">Связь со мной</h2>
+                <p>
+                    Написать мне можно в
+                    <a href="https://t.me/vlloikov" target="_blank" rel="noopener noreferrer"
+                        >Telegram</a
+                    >. Ссылка откроется в новой вкладке.
+                </p>
+            </aside>
+        </main>
+
+        <!-- Общий подвал и якорь для возврата к началу длинной страницы. -->
+        <footer>
+            <p><small>&copy; 2026 Владислав Лоиков. СКФУ.</small></p>
+            <p><a href="#top">В начало страницы</a></p>
+        </footer>
+    </body>
 </html>

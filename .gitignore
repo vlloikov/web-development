@@ -20,3 +20,7 @@ desktop.ini
 
 # Generated GitHub Pages output
 /_site/
+
+# Reports are stored separately
+report/
+reports/

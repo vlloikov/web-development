@@ -1,80 +1,111 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-          content="Личный сайт Владислава Лоикова: учёба в СКФУ, программирование, Linux и учебные проекты.">
-    <title>
-        Личный сайт Владислава Лоикова — главная
-    </title>
-    <!-- Шрифты берутся из системы; оформление подключено отдельным файлом. -->
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header id="top">
-    <!-- ID применяется к логотипу. -->
-    <img id="logo" src="images/ncfu-logo.png" alt="Стилизованная голубая эмблема СКФУ на тёмном фоне" width="160"
-         height="160">
-    <p class="eyebrow">Личный сайт · СКФУ</p>
-    <h1>Владислав Лоиков</h1>
-    <p> Учусь программной инженерии, разрабатываю учебные проекты и разбираюсь в Linux и веб-технологиях. </p>
-    <nav aria-label="Основная навигация">
-        <ul>
-            <li><a href="index.html" aria-current="page">Главная</a></li>
-            <li><a href="about.html">Обо мне</a></li>
-            <li><a href="friends.html">Друзья</a></li>
-            <li><a href="hobbies.html">Увлечения</a></li>
-            <li><a href="group.html">Группа</a></li>
-            <li><a href="sps.html">СПС — информационная безопасность</a></li>
-        </ul>
-    </nav>
-</header>
-<main id="main-content">
-    <section aria-labelledby="study-heading">
-        <p class="eyebrow">Знакомство</p>
-        <h2 id="study-heading">Учёба и интересы</h2>
-        <article aria-labelledby="education-heading">
-            <h3 id="education-heading">Моё направление</h3>
-            <p> Я студент первого курса СКФУ, группа <a href="group.html">ПИЖ-б-о-26-1</a>. Моё направление — <strong
-                    class="important">«Программная инженерия»</strong>, профиль —
-                <mark class="highlight">«Инженерия сложных программных систем»</mark>
-                .
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Личный сайт Владислава Лоикова: учёба в СКФУ, программирование, Linux и учебные проекты."
+        />
+        <title>Личный сайт Владислава Лоикова — главная</title>
+        <!-- Шрифты берутся из системы; оформление подключено отдельным файлом. -->
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="top">
+            <!-- ID применяется к логотипу. -->
+            <img
+                id="logo"
+                src="images/ncfu-logo.png"
+                alt="Стилизованная голубая эмблема СКФУ на тёмном фоне"
+                width="160"
+                height="160"
+            />
+            <p class="eyebrow">Личный сайт · СКФУ</p>
+            <h1>Владислав Лоиков</h1>
+            <p>
+                Учусь программной инженерии, разрабатываю учебные проекты и разбираюсь в Linux и
+                веб-технологиях.
             </p>
-            <p> Мне интересны Kotlin, Python, Linux и веб-разработка. Подробнее обо мне можно прочитать в <a
-                    href="about.html">биографии</a>, а о том, что я изучаю, — в разделе <a href="about.html#skills">«Навыки»</a>.
-            </p>
-        </article>
-        <figure>
-            <blockquote>
-                <p> Мне интересно понимать, как устроены программы: от алгоритмов и структур данных до взаимодействия
-                    сервисов. </p>
-            </blockquote>
-            <figcaption>Мой подход к учёбе</figcaption>
-        </figure>
-    </section>
-    <section aria-labelledby="site-heading">
-        <p class="eyebrow">Навигация</p>
-        <h2 id="site-heading">Что есть на сайте</h2>
-        <p>Начать знакомство можно с любого раздела:</p>
-        <ul>
-            <li><a href="about.html#projects">Учебные проекты</a> — алгоритмы, структуры данных и работа с Python.</li>
-            <li><a href="friends.html">Друзья</a> — люди, с которыми я учусь и работаю над проектами.</li>
-            <li><a href="hobbies.html">Увлечения</a> — программирование, музыка и катание на коньках.</li>
-            <li><a href="group.html#students">Моя группа</a> — однокурсники и направление подготовки.</li>
-            <li><a href="sps.html#architecture">Безопасность сложных систем</a> — выбранная мной профильная тема.</li>
-        </ul>
-    </section>
-    <aside aria-labelledby="contact-heading">
-        <p class="eyebrow">Контакты</p>
-        <h2 id="contact-heading">Связь со мной</h2>
-        <p>Вопросы об учёбе и совместных проектах можно обсудить в Telegram.</p>
-        <a href="https://t.me/vlloikov" target="_blank" rel="noopener noreferrer">Написать в Telegram</a>
-    </aside>
-</main>
-<footer>
-    <p><small>© 2026 Владислав Лоиков · СКФУ</small></p>
-    <a href="#top">В начало страницы ↑</a>
-</footer>
-</body>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html" aria-current="page">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="friends.html">Друзья</a></li>
+                    <li><a href="hobbies.html">Увлечения</a></li>
+                    <li><a href="group.html">Группа</a></li>
+                    <li><a href="sps.html">СПС — информационная безопасность</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <section aria-labelledby="study-heading">
+                <p class="eyebrow">Знакомство</p>
+                <h2 id="study-heading">Учёба и интересы</h2>
+                <article aria-labelledby="education-heading">
+                    <h3 id="education-heading">Моё направление</h3>
+                    <p>
+                        Я студент первого курса СКФУ, группа <a href="group.html">ПИЖ-б-о-26-1</a>.
+                        Моё направление —
+                        <strong class="important">«Программная инженерия»</strong>, профиль —
+                        <mark class="highlight">«Инженерия сложных программных систем»</mark>
+                        .
+                    </p>
+                    <p>
+                        Мне интересны Kotlin, Python, Linux и веб-разработка. Подробнее обо мне
+                        можно прочитать в <a href="about.html">биографии</a>, а о том, что я изучаю,
+                        — в разделе <a href="about.html#skills">«Навыки»</a>.
+                    </p>
+                </article>
+                <figure>
+                    <blockquote>
+                        <p>
+                            Мне интересно понимать, как устроены программы: от алгоритмов и структур
+                            данных до взаимодействия сервисов.
+                        </p>
+                    </blockquote>
+                    <figcaption>Мой подход к учёбе</figcaption>
+                </figure>
+            </section>
+            <section aria-labelledby="site-heading">
+                <p class="eyebrow">Навигация</p>
+                <h2 id="site-heading">Что есть на сайте</h2>
+                <p>Начать знакомство можно с любого раздела:</p>
+                <ul>
+                    <li>
+                        <a href="about.html#projects">Учебные проекты</a> — алгоритмы, структуры
+                        данных и работа с Python.
+                    </li>
+                    <li>
+                        <a href="friends.html">Друзья</a> — люди, с которыми я учусь и работаю над
+                        проектами.
+                    </li>
+                    <li>
+                        <a href="hobbies.html">Увлечения</a> — программирование, музыка и катание на
+                        коньках.
+                    </li>
+                    <li>
+                        <a href="group.html#students">Моя группа</a> — однокурсники и направление
+                        подготовки.
+                    </li>
+                    <li>
+                        <a href="sps.html#architecture">Безопасность сложных систем</a> — выбранная
+                        мной профильная тема.
+                    </li>
+                </ul>
+            </section>
+            <aside aria-labelledby="contact-heading">
+                <p class="eyebrow">Контакты</p>
+                <h2 id="contact-heading">Связь со мной</h2>
+                <p>Вопросы об учёбе и совместных проектах можно обсудить в Telegram.</p>
+                <a href="https://t.me/vlloikov" target="_blank" rel="noopener noreferrer"
+                    >Написать в Telegram</a
+                >
+            </aside>
+        </main>
+        <footer>
+            <p><small>© 2026 Владислав Лоиков · СКФУ</small></p>
+            <a href="#top">В начало страницы ↑</a>
+        </footer>
+    </body>
 </html>

@@ -1,83 +1,113 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Друзья Владислава Лоикова: Артём Бабаян, Егор Бирюков и Максим Киркачев.">
-    <title>
-        Мои друзья — Владислав Лоиков
-    </title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header id="top">
-    <img id="logo" src="images/ncfu-logo.png" alt="Стилизованная голубая эмблема СКФУ на тёмном фоне" width="160"
-         height="160">
-    <p class="eyebrow"><a href="index.html">Личный сайт · СКФУ</a></p>
-    <h1>Мои друзья</h1>
-    <p>Здесь я знакомлю посетителей сайта со своими друзьями.</p>
-    <nav aria-label="Основная навигация">
-        <ul>
-            <li><a href="index.html">Главная</a></li>
-            <li><a href="about.html">Обо мне</a></li>
-            <li><a href="friends.html" aria-current="page">Друзья</a></li>
-            <li><a href="hobbies.html">Увлечения</a></li>
-            <li><a href="group.html">Группа</a></li>
-            <li><a href="sps.html">СПС — информационная безопасность</a></li>
-        </ul>
-    </nav>
-</header>
-<main id="main-content">
-    <section aria-labelledby="friends-heading">
-        <h2 id="friends-heading">Знакомьтесь</h2>
-        <!-- Весь материал об одном друге находится внутри одного li. -->
-        <ul>
-            <li>
-                <article aria-labelledby="artem-heading">
-                    <h3 id="artem-heading">Бабаян Артём</h3>
-                    <figure class="photo">
-                        <img src="images/Artem.jpg" alt="Артём Бабаян в учебной аудитории" width="240" height="320">
-                        <figcaption>Артём Бабаян.</figcaption>
-                    </figure>
-                    <p> Артём работает над серверной частью нашего проекта в <a href="about.html#team">команде
-                        ByteForce</a>. </p>
-                </article>
-            </li>
-            <li>
-                <article aria-labelledby="egor-heading">
-                    <h3 id="egor-heading">Бирюков Егор</h3>
-                    <figure class="photo">
-                        <img src="images/Egor.jpg"
-                             alt="Егор Бирюков на фоне стенда СКФУ; перед камерой его студенческий билет" width="240"
-                             height="320" loading="lazy">
-                        <figcaption>Егор Бирюков.</figcaption>
-                    </figure>
-                    <p> Егор занимается интерфейсом в нашей <a href="about.html#team">учебной команде</a>. </p>
-                </article>
-            </li>
-            <li>
-                <article aria-labelledby="maxim-heading">
-                    <h3 id="maxim-heading">Киркачев Максим</h3>
-                    <figure class="photo">
-                        <img src="images/Max.jpg" alt="Максим Киркачев за партой в учебной аудитории" width="240"
-                             height="320" loading="lazy">
-                        <figcaption>Максим Киркачев.</figcaption>
-                    </figure>
-                    <p> Максим учится со мной в группе <a href="group.html">ПИЖ-б-о-26-1</a>. </p>
-                </article>
-            </li>
-        </ul>
-    </section>
-    <!-- aside дополняет карточки ссылкой на сведения об учебной группе. -->
-    <aside aria-labelledby="classmates-heading">
-        <h2 id="classmates-heading">Друзья и одногруппники</h2>
-        <p> Общая фотография и список одногруппников находятся в разделе <a href="group.html#students">«Студенты
-            группы»</a>. </p>
-    </aside>
-</main>
-<footer>
-    <p><small>© 2026 Владислав Лоиков · СКФУ</small></p>
-    <a href="#top">В начало страницы ↑</a>
-</footer>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Друзья Владислава Лоикова: Артём Бабаян, Егор Бирюков и Максим Киркачев."
+        />
+        <title>Мои друзья — Владислав Лоиков</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <header id="top">
+            <img
+                id="logo"
+                src="images/ncfu-logo.png"
+                alt="Стилизованная голубая эмблема СКФУ на тёмном фоне"
+                width="160"
+                height="160"
+            />
+            <p class="eyebrow"><a href="index.html">Личный сайт · СКФУ</a></p>
+            <h1>Мои друзья</h1>
+            <p>Здесь я знакомлю посетителей сайта со своими друзьями.</p>
+            <nav aria-label="Основная навигация">
+                <ul>
+                    <li><a href="index.html">Главная</a></li>
+                    <li><a href="about.html">Обо мне</a></li>
+                    <li><a href="friends.html" aria-current="page">Друзья</a></li>
+                    <li><a href="hobbies.html">Увлечения</a></li>
+                    <li><a href="group.html">Группа</a></li>
+                    <li><a href="sps.html">СПС — информационная безопасность</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main id="main-content">
+            <section aria-labelledby="friends-heading">
+                <h2 id="friends-heading">Знакомьтесь</h2>
+                <!-- Весь материал об одном друге находится внутри одного li. -->
+                <ul>
+                    <li>
+                        <article aria-labelledby="artem-heading">
+                            <h3 id="artem-heading">Бабаян Артём</h3>
+                            <figure class="photo">
+                                <img
+                                    src="images/Artem.jpg"
+                                    alt="Артём Бабаян в учебной аудитории"
+                                    width="240"
+                                    height="320"
+                                />
+                                <figcaption>Артём Бабаян.</figcaption>
+                            </figure>
+                            <p>
+                                Артём работает над серверной частью нашего проекта в
+                                <a href="about.html#team">команде ByteForce</a>.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article aria-labelledby="egor-heading">
+                            <h3 id="egor-heading">Бирюков Егор</h3>
+                            <figure class="photo">
+                                <img
+                                    src="images/Egor.jpg"
+                                    alt="Егор Бирюков на фоне стенда СКФУ; перед камерой его студенческий билет"
+                                    width="240"
+                                    height="320"
+                                    loading="lazy"
+                                />
+                                <figcaption>Егор Бирюков.</figcaption>
+                            </figure>
+                            <p>
+                                Егор занимается интерфейсом в нашей
+                                <a href="about.html#team">учебной команде</a>.
+                            </p>
+                        </article>
+                    </li>
+                    <li>
+                        <article aria-labelledby="maxim-heading">
+                            <h3 id="maxim-heading">Киркачев Максим</h3>
+                            <figure class="photo">
+                                <img
+                                    src="images/Max.jpg"
+                                    alt="Максим Киркачев за партой в учебной аудитории"
+                                    width="240"
+                                    height="320"
+                                    loading="lazy"
+                                />
+                                <figcaption>Максим Киркачев.</figcaption>
+                            </figure>
+                            <p>
+                                Максим учится со мной в группе
+                                <a href="group.html">ПИЖ-б-о-26-1</a>.
+                            </p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+            <!-- aside дополняет карточки ссылкой на сведения об учебной группе. -->
+            <aside aria-labelledby="classmates-heading">
+                <h2 id="classmates-heading">Друзья и одногруппники</h2>
+                <p>
+                    Общая фотография и список одногруппников находятся в разделе
+                    <a href="group.html#students">«Студенты группы»</a>.
+                </p>
+            </aside>
+        </main>
+        <footer>
+            <p><small>© 2026 Владислав Лоиков · СКФУ</small></p>
+            <a href="#top">В начало страницы ↑</a>
+        </footer>
+    </body>
 </html>

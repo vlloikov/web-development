@@ -13,7 +13,8 @@
     --accent: #89b4fa;
     --visited: #cba6f7;
     --font-body: system-ui, sans-serif;
-    --font-heading: "JetBrainsMono Nerd Font", "JetBrainsMono Nerd Font Mono", "JetBrains Mono", monospace;
+    --font-heading:
+        "JetBrainsMono Nerd Font", "JetBrainsMono Nerd Font Mono", "JetBrains Mono", monospace;
 }
 
 * {
@@ -36,7 +37,12 @@ body {
     overflow-wrap: anywhere;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0 0 0.75rem;
     font-family: var(--font-heading);
     line-height: 1.25;
@@ -82,7 +88,8 @@ p:last-child {
     margin-bottom: 0;
 }
 
-ul, ol {
+ul,
+ol {
     margin: 0 0 1rem;
     padding-inline-start: 1.5rem;
 }
@@ -124,7 +131,13 @@ a:focus-visible {
 }
 
 /* У каждого семантического блока есть фон, отступы и граница. */
-header, nav, main, section, article, aside, footer {
+header,
+nav,
+main,
+section,
+article,
+aside,
+footer {
     margin-bottom: 1rem;
     border-radius: 0.5rem;
 }
@@ -256,7 +269,8 @@ figure {
     max-width: 42rem;
 }
 
-figcaption, small {
+figcaption,
+small {
     color: var(--muted);
     font-size: 0.85rem;
 }
