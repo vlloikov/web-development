@@ -15,8 +15,75 @@ concurrency:
   cancel-in-progress: false
 
 jobs:
+  quality:
+    name: Code Quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+          cache: npm
+
+      - name: Install development tools
+        run: npm ci
+        env:
+          HUSKY: '0'
+
+      - name: Check HTML and CSS formatting
+        run: npm run format:check
+
+      - name: Validate HTML
+        run: npm run lint:html
+
+      - name: Lint CSS
+        run: npm run lint:css
+
+  validation:
+    name: W3C Validation
+    needs: quality
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6
+        with:
+          persist-credentials: false
+
+      - name: Setup Java for Nu Html Checker
+        uses: actions/setup-java@v5
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Download Nu Html Checker
+        run: |
+          curl --fail --location --silent --show-error --retry 3 \
+            https://github.com/validator/validator/releases/download/latest/vnu.jar \
+            --output "$RUNNER_TEMP/vnu.jar"
+          java -jar "$RUNNER_TEMP/vnu.jar" --version
+
+      - name: Validate HTML with Nu Html Checker
+        run: >-
+          java -jar "$RUNNER_TEMP/vnu.jar"
+          --format gnu --skip-non-html
+          frontend-introduction it-and-programming
+
+      - name: Validate CSS with Nu Html Checker
+        run: >-
+          java -jar "$RUNNER_TEMP/vnu.jar"
+          --format gnu --skip-non-css
+          frontend-introduction it-and-programming
+
   build:
     name: Build site
+    needs: validation
     runs-on: ubuntu-latest
     timeout-minutes: 5
     steps:

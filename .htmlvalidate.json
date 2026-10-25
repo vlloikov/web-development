@@ -1,0 +1,8 @@
+{
+  "root": true,
+  "extends": [
+    "html-validate:standard",
+    "html-validate:a11y",
+    "html-validate:prettier"
+  ]
+}

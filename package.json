@@ -1,0 +1,37 @@
+{
+  "name": "web-development",
+  "version": "0.0.0",
+  "private": true,
+  "description": "University web development labs",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=24.8.0"
+  },
+  "scripts": {
+    "prepare": "husky",
+    "format": "prettier --write \"{frontend-introduction,it-and-programming}/**/*.{html,css}\"",
+    "format:check": "prettier --check \"{frontend-introduction,it-and-programming}/**/*.{html,css}\"",
+    "check": "npm run format:check && npm run lint",
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "html-validate \"frontend-introduction/**/*.html\" \"it-and-programming/**/*.html\"",
+    "lint:css": "stylelint \"{frontend-introduction,it-and-programming}/**/*.css\" --allow-empty-input --max-warnings 0",
+    "lint:staged": "lint-staged"
+  },
+  "lint-staged": {
+    "{frontend-introduction,it-and-programming}/**/*.html": [
+      "prettier --write",
+      "html-validate"
+    ],
+    "{frontend-introduction,it-and-programming}/**/*.css": [
+      "prettier --write",
+      "stylelint --max-warnings 0"
+    ]
+  },
+  "devDependencies": {
+    "html-validate": "11.17.0",
+    "husky": "9.1.7",
+    "lint-staged": "17.6.0",
+    "prettier": "3.9.10",
+    "stylelint": "17.16.0"
+  }
+}
