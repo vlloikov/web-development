@@ -1,0 +1,302 @@
+:root {
+    --page-bg: #0c0c14;
+    --text: #cdd6f4;
+    --muted: #a6adc8;
+    --border: #45475a;
+    --header-bg: #14141e;
+    --nav-bg: #20202d;
+    --main-bg: #11111b;
+    --section-bg: #181825;
+    --article-bg: #1e1e2e;
+    --aside-bg: #17232f;
+    --footer-bg: #161620;
+    --accent: #89b4fa;
+    --visited: #cba6f7;
+    --font-body: system-ui, sans-serif;
+    --font-heading: "JetBrainsMono Nerd Font", "JetBrainsMono Nerd Font Mono", "JetBrains Mono", monospace;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 100%;
+}
+
+body {
+    max-width: 68rem;
+    margin: 1rem auto;
+    padding: 0 0.75rem;
+    background-color: var(--page-bg);
+    color: var(--text);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    line-height: 1.5;
+    overflow-wrap: anywhere;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.75rem;
+    font-family: var(--font-heading);
+    line-height: 1.25;
+}
+
+h1 {
+    color: var(--accent);
+    font-size: 2rem;
+}
+
+h2 {
+    color: #a6e3a1;
+    font-size: 1.5rem;
+}
+
+h3 {
+    color: #cba6f7;
+    font-size: 1.25rem;
+}
+
+h4 {
+    color: #fab387;
+    font-size: 1.15rem;
+}
+
+h5 {
+    color: #f5c2e7;
+    font-size: 1.05rem;
+}
+
+h6 {
+    color: #89dceb;
+    font-size: 1rem;
+}
+
+p {
+    margin: 0 0 1rem;
+    text-align: justify;
+    line-height: 1.5;
+}
+
+p:last-child {
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin: 0 0 1rem;
+    padding-inline-start: 1.5rem;
+}
+
+ul {
+    list-style-type: square;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+li > ul {
+    margin-top: 0.5rem;
+}
+
+/* Порядок правил позволяет показать разные состояния ссылок. */
+a {
+    color: var(--accent);
+    text-decoration: none;
+}
+
+a:visited {
+    color: var(--visited);
+}
+
+a:hover {
+    color: #b4befe;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #fab387;
+}
+
+a:focus-visible {
+    outline: 2px solid #f9e2af;
+    outline-offset: 2px;
+}
+
+/* У каждого семантического блока есть фон, отступы и граница. */
+header, nav, main, section, article, aside, footer {
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+header {
+    padding: 1.25rem;
+    border: 1px solid var(--border);
+    background-color: var(--header-bg);
+}
+
+nav {
+    padding: 0.5rem;
+    border: 1px solid #585b70;
+    background-color: var(--nav-bg);
+}
+
+main {
+    padding: 0.75rem;
+    border: 1px solid #313244;
+    background-color: var(--main-bg);
+}
+
+section {
+    padding: 0.8rem;
+    border: 1px solid #414154;
+    background-color: var(--section-bg);
+}
+
+article {
+    padding: 0.9rem;
+    border: 1px solid #58536b;
+    background-color: var(--article-bg);
+}
+
+aside {
+    padding: 1rem;
+    border: 1px solid #3e6070;
+    background-color: var(--aside-bg);
+}
+
+footer {
+    padding: 1.1rem;
+    border: 1px solid #3b3b50;
+    background-color: var(--footer-bg);
+}
+
+/* Горизонтальное меню: обычные строчно-блочные пункты. */
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    display: inline-block;
+    max-width: 100%;
+    margin: 0.2rem;
+}
+
+nav a {
+    display: inline-block;
+    padding: 0.35rem;
+    border-radius: 0.25rem;
+    font-family: var(--font-heading);
+}
+
+nav a[aria-current="page"] {
+    background-color: #334563;
+    color: var(--text);
+    font-weight: 700;
+}
+
+nav a:hover {
+    background-color: var(--article-bg);
+    color: #b4befe;
+}
+
+/* Классы для выделения текста и стиль цитаты. */
+.important {
+    color: #f38ba8;
+    font-weight: 700;
+}
+
+.highlight {
+    background-color: #f9e2af;
+    color: #1e1e2e;
+}
+
+.eyebrow {
+    color: var(--muted);
+    font-family: var(--font-heading);
+    font-size: 0.8rem;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+blockquote {
+    margin: 1rem 0;
+    padding: 1rem;
+    border: 1px solid var(--accent);
+    background-color: #222b42;
+    font-style: italic;
+}
+
+/* Изображения и подписи.*/
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+}
+
+#logo {
+    width: 8rem;
+    margin-bottom: 1rem;
+    border-color: var(--accent);
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+.photo {
+    max-width: 16rem;
+}
+
+.screen-figure {
+    max-width: 42rem;
+}
+
+figcaption, small {
+    color: var(--muted);
+    font-size: 0.85rem;
+}
+
+figcaption {
+    margin-top: 0.5rem;
+}
+
+/* Описательные списки и профильная цветовая схема СПС. */
+dl {
+    margin: 1rem 0;
+}
+
+dt {
+    margin-top: 0.75rem;
+    color: var(--accent);
+    font-family: var(--font-heading);
+    font-weight: 700;
+}
+
+dd {
+    margin: 0.25rem 0 0 1rem;
+}
+
+.security-content {
+    --topic-accent: #89dceb;
+    --topic-border: #3f5968;
+    --topic-surface: #14202b;
+}
+
+.security-content section {
+    border-color: var(--topic-border);
+    background-color: var(--topic-surface);
+}
+
+.security-content h3,
+.security-content .term {
+    color: var(--topic-accent);
+}
+
+.diagram-figure img {
+    background-color: #ffffff;
+}
