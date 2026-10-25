@@ -17,3 +17,6 @@ Thumbs.db
 desktop.ini
 
 .idea/
+
+# Generated GitHub Pages output
+/_site/
