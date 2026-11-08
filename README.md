@@ -18,7 +18,8 @@
 | 01 | Структура личного сайта, заголовки, текст и списки | [lab01](frontend-introduction/lab01/site/) |
 | 02 | Семантическая разметка, навигация, ссылки и изображения | [lab02](frontend-introduction/lab02/site/) |
 | 03 | Основы CSS, селекторы и стилизация текста | [lab03](frontend-introduction/lab03/site/) |
-
+| 04 | Компоновка страниц с CSS Grid и Flexbox | [lab04](frontend-introduction/lab04/site/) |
+| 05 | Адаптивная вёрстка, мобильная навигация и изображения разных размеров | [lab05](frontend-introduction/lab05/site/) |
 ### Информационные технологии и программирование
 
 | Работа | Содержание | Код |
