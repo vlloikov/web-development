@@ -1,0 +1,427 @@
+:root {
+    --status-normal-bg: #e6f5ed;
+    --status-normal-text: #17553a;
+    --status-warning-bg: #fff2cd;
+    --status-warning-text: #6b4700;
+    --status-alarm-bg: #ffe9ed;
+    --status-alarm-text: #94223e;
+    --alarm-row: #fff6f7;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --status-normal-bg: #163b2e;
+        --status-normal-text: #b0ecd0;
+        --status-warning-bg: #493817;
+        --status-warning-text: #ffe0a0;
+        --status-alarm-bg: #4d2330;
+        --status-alarm-text: #ffc2cf;
+        --alarm-row: #30212d;
+    }
+}
+
+.lab-section {
+    font-size: 1rem;
+    line-height: 1.625rem;
+}
+
+.lab-form,
+.form-fieldset,
+.field {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+}
+
+.lab-form {
+    gap: 24px;
+}
+
+.form-fieldset {
+    gap: 20px;
+    margin: 0;
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.form-fieldset > legend {
+    max-width: 100%;
+    padding-inline: 8px;
+    color: var(--text);
+    font-weight: 600;
+}
+
+.form-grid,
+.subscribe-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    gap: 20px;
+    min-width: 0;
+}
+
+.field {
+    gap: 8px;
+}
+
+.field > label,
+.option-fieldset > legend {
+    font-weight: 500;
+}
+
+.required-mark {
+    color: var(--important);
+}
+
+.field input,
+.field select,
+.field textarea {
+    display: block;
+    width: 100%;
+    min-width: 0;
+    min-height: 48px;
+    padding: 11px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background-color: var(--page);
+    color: var(--text);
+    font: inherit;
+    line-height: 1.5rem;
+}
+
+.field textarea {
+    min-height: 112px;
+    resize: vertical;
+}
+
+.field input::placeholder,
+.field textarea::placeholder {
+    color: var(--muted);
+    opacity: 1;
+}
+
+.field select {
+    appearance: none;
+    padding-right: 40px;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m4 6 4 4 4-4' fill='none' stroke='%23858fa1' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    background-position: right 12px center;
+    background-repeat: no-repeat;
+    background-size: 16px;
+}
+
+.field input:hover:not(:disabled),
+.field select:hover:not(:disabled),
+.field textarea:hover:not(:disabled) {
+    border-color: var(--muted);
+}
+
+.field input:focus,
+.field select:focus,
+.field textarea:focus {
+    border-color: var(--accent);
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
+.field input:disabled,
+.field select:disabled,
+.field textarea:disabled {
+    background-color: var(--raised);
+    color: var(--muted);
+    cursor: not-allowed;
+}
+
+.field input[type="file"] {
+    padding: 6px;
+    overflow: hidden;
+}
+
+.field input::file-selector-button {
+    min-height: 34px;
+    margin-right: 12px;
+    padding: 6px 12px;
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    background: var(--surface);
+    color: var(--text);
+    font: inherit;
+    cursor: pointer;
+}
+
+.field input::file-selector-button:hover {
+    border-color: var(--accent);
+}
+
+.field-help,
+.form-note {
+    color: var(--muted);
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+.form-note a {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.option-fieldset {
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.option-fieldset > legend {
+    margin-bottom: 8px;
+    padding: 0;
+}
+
+.choice-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 24px;
+}
+
+.choice {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+    min-height: 44px;
+    padding-block: 8px;
+    cursor: pointer;
+}
+
+.choice input {
+    flex: 0 0 20px;
+    width: 20px;
+    height: 20px;
+    margin: 3px 0 0;
+    border: 2px solid var(--muted);
+    border-radius: 5px;
+    appearance: none;
+    background-color: var(--page);
+    cursor: pointer;
+}
+
+.choice input[type="checkbox"]:checked {
+    border-color: var(--accent);
+    background-color: var(--accent);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='%2311141b' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+}
+
+@media (prefers-color-scheme: light) {
+    .choice input[type="checkbox"]:checked {
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='m3 8 3 3 7-7' fill='none' stroke='white' stroke-width='2.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+    }
+}
+
+.choice input[type="radio"] {
+    border-radius: 50%;
+}
+
+.choice input[type="radio"]:checked {
+    border: 6px solid var(--accent);
+}
+
+.choice input:hover {
+    border-color: var(--accent);
+}
+
+.choice input:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.form-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.lab-form .button {
+    width: 100%;
+    font: inherit;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.table-scroll {
+    max-width: 100%;
+    min-width: 0;
+    overflow-x: auto;
+    border: 1px solid var(--border);
+    border-radius: 14px;
+    background: var(--page);
+}
+
+.table-scroll:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    font-size: 0.875rem;
+    line-height: 1.375rem;
+}
+
+.data-table caption {
+    padding: 16px;
+    color: var(--text);
+    font-weight: 600;
+    text-align: left;
+    caption-side: top;
+}
+
+.data-table th,
+.data-table td {
+    min-width: 6.5rem;
+    padding: 12px 16px;
+    border-top: 1px solid var(--border);
+    border-right: 1px solid var(--border);
+    vertical-align: top;
+}
+
+.data-table th:last-child,
+.data-table td:last-child {
+    border-right: 0;
+}
+
+.data-table thead,
+.data-table tfoot {
+    background: var(--raised);
+}
+
+.data-table th {
+    font-weight: 600;
+}
+
+.data-table tbody tr:nth-child(even) {
+    background: var(--surface);
+}
+
+.data-table th[scope="rowgroup"] {
+    background: var(--raised);
+    vertical-align: middle;
+}
+
+.data-table .row-alarm {
+    background: var(--alarm-row);
+}
+
+.schedule-table {
+    min-width: 43rem;
+}
+
+.matrix-table {
+    min-width: 39rem;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 10px;
+    border-radius: 8px;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+}
+
+.status--normal {
+    background: var(--status-normal-bg);
+    color: var(--status-normal-text);
+}
+
+.status--warning {
+    background: var(--status-warning-bg);
+    color: var(--status-warning-text);
+}
+
+.status--alarm {
+    background: var(--status-alarm-bg);
+    color: var(--status-alarm-text);
+}
+
+.metric-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+    gap: 12px;
+    margin: 0;
+}
+
+.metric-grid > div {
+    padding: 16px;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: var(--page);
+}
+
+.metric-grid dt {
+    color: var(--muted);
+    font-size: 0.875rem;
+}
+
+.metric-grid dd {
+    margin: 8px 0 0;
+    font-family: Manrope, system-ui, sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+
+.form-result h1 {
+    margin: 0;
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    line-height: 1.2;
+}
+
+.result-icon {
+    display: block;
+    flex-shrink: 0;
+    padding: 16px;
+    border-radius: 20px;
+    background: var(--status-normal-bg);
+    color: var(--status-normal-text);
+}
+
+.result-actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.result-actions .button {
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
+
+.result-actions a.button--primary {
+    color: var(--page);
+}
+
+.result-actions a.button--secondary {
+    color: var(--text);
+}
+
+@media (min-width: 640px) {
+    .form-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .subscribe-grid {
+        grid-template-columns: minmax(0, 1fr) auto;
+        align-items: end;
+    }
+
+    .lab-form .button,
+    .result-actions .button {
+        width: auto;
+    }
+
+    .form-fieldset {
+        padding: 20px;
+    }
+}
