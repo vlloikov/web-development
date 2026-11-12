@@ -20,6 +20,8 @@
 | 03 | Основы CSS, селекторы и стилизация текста | [lab03](frontend-introduction/lab03/site/) |
 | 04 | Компоновка страниц с CSS Grid и Flexbox | [lab04](frontend-introduction/lab04/site/) |
 | 05 | Адаптивная вёрстка, мобильная навигация и изображения разных размеров | [lab05](frontend-introduction/lab05/site/) |
+| 06 | Формы, HTML-валидация, таблицы и панель телеметрии | [lab06](site/) |
+
 ### Информационные технологии и программирование
 
 | Работа | Содержание | Код |
@@ -42,6 +44,13 @@
 
 ```bash
 python3 -m http.server 8000
+```
+
+
+Для проверки отправки форм ЛР № 6  локальный приёмник из корня репозитория:
+
+```bash
+python3 frontend-introduction/lab06/tools/serve.py
 ```
 
 
@@ -107,7 +116,7 @@ HTML-Validate обеспечивает быструю локальную про�
 ```bash
 git switch main
 git pull --ff-only
-git switch -c feature/frontend-lab04
+git switch -c feature/frontend-lab06
 ```
 
 
@@ -116,3 +125,4 @@ git switch -c feature/frontend-lab04
 [Владислав Лоиков](https://github.com/vlloikov) · СКФУ · Программная инженерия
 
 Код распространяется под [Apache License 2.0](LICENSE). Условия использования сторонних материалов указаны рядом с ними, если применимо.
+
