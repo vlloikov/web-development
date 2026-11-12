@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta
+            name="description"
+            content="Друзья Владислава Лоикова: Артём Бабаян, Егор Бирюков и Максим Киркачев."
+        />
+        <title>Мои друзья — Владислав Лоиков</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="forms.css" />
+        <meta name="color-scheme" content="light dark" />
+        <link
+            rel="preload"
+            href="assets/fonts/manrope.woff"
+            as="font"
+            type="font/woff"
+            crossorigin
+        />
+        <link rel="preload" href="assets/fonts/inter.woff" as="font" type="font/woff" crossorigin />
+    </head>
+    <body id="top" class="inner-page">
+        <a class="skip-link" href="#main-content">Перейти к содержимому</a>
+        <header class="global-header">
+            <div class="header-inner">
+                <a class="brand" href="index.html">vlloikov</a>
+                <nav class="desktop-nav" aria-label="Основная навигация">
+                    <ul class="nav-list">
+                        <li><a href="about.html">Обо мне</a></li>
+                        <li><a href="friends.html" aria-current="page">Друзья</a></li>
+                        <li><a href="hobbies.html">Увлечения</a></li>
+                        <li><a href="group.html">Группа</a></li>
+                        <li><a href="sps.html">СПС</a></li>
+                    </ul>
+                </nav>
+                <details class="compact-nav">
+                    <summary aria-label="Меню сайта">
+                        <span class="menu-icon" aria-hidden="true"></span>
+                    </summary>
+                    <nav aria-label="Страницы сайта">
+                        <ul class="nav-list">
+                            <li><a href="about.html">Обо мне</a></li>
+                            <li><a href="friends.html" aria-current="page">Друзья</a></li>
+                            <li><a href="hobbies.html">Увлечения</a></li>
+                            <li><a href="group.html">Группа</a></li>
+                            <li><a href="sps.html">СПС</a></li>
+                        </ul>
+                    </nav>
+                </details>
+            </div>
+        </header>
+
+        <div class="page-shell content-shell">
+            <main id="main-content" tabindex="-1" class="content-main">
+                <section class="page-intro" aria-labelledby="page-title">
+                    <span class="badge">Личный сайт · СКФУ</span>
+                    <h1 id="page-title">Мои друзья</h1>
+                    <p class="page-lead">Здесь я знакомлю посетителей сайта со своими друзьями.</p>
+                </section>
+                <section aria-labelledby="friends-heading" class="friends-section">
+                    <h2 id="friends-heading">Знакомьтесь</h2>
+                    <ul class="friend-grid">
+                        <li>
+                            <article aria-labelledby="artem-heading" class="friend-card">
+                                <figure class="photo">
+                                    <img
+                                        src="images/Artem.jpg"
+                                        alt="Артём Бабаян в учебной аудитории"
+                                        width="240"
+                                        height="320"
+                                    />
+                                    <figcaption>Артём Бабаян.</figcaption>
+                                </figure>
+                                <h3 id="artem-heading">Бабаян Артём</h3>
+                                <p>
+                                    Артём работает над серверной частью нашего проекта в
+                                    <a href="about.html#team">команде ByteForce</a>.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article aria-labelledby="egor-heading" class="friend-card">
+                                <figure class="photo">
+                                    <img
+                                        src="images/Egor.jpg"
+                                        alt="Егор Бирюков на фоне стенда СКФУ; перед камерой его студенческий билет"
+                                        width="240"
+                                        height="320"
+                                        loading="lazy"
+                                    />
+                                    <figcaption>Егор Бирюков.</figcaption>
+                                </figure>
+                                <h3 id="egor-heading">Бирюков Егор</h3>
+                                <p>
+                                    Егор занимается интерфейсом в нашей
+                                    <a href="about.html#team">учебной команде</a>.
+                                </p>
+                            </article>
+                        </li>
+                        <li>
+                            <article aria-labelledby="maxim-heading" class="friend-card">
+                                <figure class="photo">
+                                    <img
+                                        src="images/Max.jpg"
+                                        alt="Максим Киркачев за партой в учебной аудитории"
+                                        width="240"
+                                        height="320"
+                                        loading="lazy"
+                                    />
+                                    <figcaption>Максим Киркачев.</figcaption>
+                                </figure>
+                                <h3 id="maxim-heading">Киркачев Максим</h3>
+                                <p>
+                                    Максим учится со мной в группе
+                                    <a href="group.html">ПИЖ-б-о-26-1</a>.
+                                </p>
+                            </article>
+                        </li>
+                    </ul>
+                </section>
+                <section
+                    class="content-card lab-section"
+                    id="friends-contacts"
+                    tabindex="-1"
+                    aria-labelledby="friends-contacts-heading"
+                >
+                    <h2 id="friends-contacts-heading">Контакты друзей</h2>
+                    <p class="muted">
+                        Телефоны и email — вымышленные данные для демонстрации таблицы. Имена
+                        соответствуют карточкам выше.
+                    </p>
+                    <section
+                        class="table-scroll"
+                        aria-labelledby="friends-contacts-caption"
+                        tabindex="0"
+                    >
+                        <table class="data-table">
+                            <caption id="friends-contacts-caption">
+                                Учебный справочник контактов друзей
+                            </caption>
+                            <thead>
+                                <tr>
+                                    <th scope="col" aria-sort="ascending">Имя ↑</th>
+                                    <th scope="col">Телефон</th>
+                                    <th scope="col">Email</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Бабаян Артём</th>
+                                    <td>+7 (000) 000-00-01</td>
+                                    <td>artem@example.com</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Бирюков Егор</th>
+                                    <td>+7 (000) 000-00-02</td>
+                                    <td>egor@example.com</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Киркачев Максим</th>
+                                    <td>+7 (000) 000-00-03</td>
+                                    <td>maxim@example.com</td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th scope="row" colspan="2">Контактов в справочнике</th>
+                                    <td>3</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </section>
+                </section>
+            </main>
+            <aside aria-labelledby="classmates-heading" class="context-card">
+                <div class="university-mark">
+                    <img
+                        id="logo"
+                        src="images/ncfu-logo.png"
+                        alt="Стилизованная голубая эмблема СКФУ на тёмном фоне"
+                        width="44"
+                        height="44"
+                    />
+                    <p class="eyebrow">
+                        <a href="index.html">Личный сайт · СКФУ</a>
+                    </p>
+                </div>
+                <h2 id="classmates-heading">Друзья и одногруппники</h2>
+                <p>
+                    Общая фотография и список одногруппников находятся в разделе
+                    <a href="group.html#students">«Студенты группы»</a>.
+                </p>
+            </aside>
+            <aside
+                class="contact-card"
+                id="contact"
+                tabindex="-1"
+                aria-labelledby="contact-heading"
+            >
+                <h2 id="contact-heading">Давай общаться</h2>
+                <p class="muted">Об учёбе, идеях и совместных проектах.</p>
+                <a
+                    class="social-link"
+                    href="https://t.me/vlloikov"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        class="social-icon"
+                        src="assets/icons/telegram.svg"
+                        alt=""
+                        width="32"
+                        height="32"
+                    /><span>Написать в Telegram</span></a
+                >
+                <a
+                    class="social-link"
+                    href="https://github.com/vlloikov"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    ><img
+                        class="social-icon"
+                        src="assets/icons/github.svg"
+                        alt=""
+                        width="32"
+                        height="32"
+                    /><span>GitHub</span></a
+                >
+            </aside>
+            <footer class="site-footer">
+                <p><small>© 2026 Владислав Лоиков · СКФУ</small></p>
+                <div class="footer-links">
+                    <a
+                        class="social-link"
+                        href="https://t.me/vlloikov"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="social-icon"
+                            src="assets/icons/telegram.svg"
+                            alt=""
+                            width="32"
+                            height="32"
+                        /><span>Telegram</span></a
+                    >
+                    <a
+                        class="social-link"
+                        href="https://github.com/vlloikov"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        ><img
+                            class="social-icon"
+                            src="assets/icons/github.svg"
+                            alt=""
+                            width="32"
+                            height="32"
+                        /><span>GitHub</span></a
+                    >
+                </div>
+                <a href="#top" class="back-top">В начало страницы ↑</a>
+            </footer>
+        </div>
+    </body>
+</html>
